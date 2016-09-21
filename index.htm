@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html class="pl">
+	<head>
+		<title>Minesweeper - Mike Feola.NET</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width" />
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+		<link rel="stylesheet" href="css/bootstrap.min.css" media="all" />
+		<link rel="stylesheet" href="css/sweeper.css" media="all" />
+
+		<!-- End Pattern Lab -->
+
+	</head>
+	<body class="body">
+
+		<div class="wrapper">
+			<div class="container">
+        <form id="form" class="row text-center">
+          <fieldset class="col-sm-4">
+	          <label for="dimensions">Dimensions</label>
+	          <input type="number" id="dimensions" name="dimensions" value="20" />
+          </fieldset>
+          <fieldset class="col-sm-4">
+            <label for="mines">Mines</label>
+            <input type="number" id="mines" name="mines" value="50" />
+          </fieldset>
+          <fieldset class="col-sm-4">
+              <a href="#" class="update btn btn-primary">New Game</a>
+              <a href="#" class="reset btn btn-primary">Reset Game</a>
+          </fieldset>
+        </form>
+				<div class="row text-center buffer-top">
+          <div class="col-xs-12" >
+            <div id="mineBoard" oncontextmenu="return false;"></div>
+          </div>
+				</div>
+				<div class="row text-center buffer-top">
+          <fieldset class="col-sm-6">
+            Flags
+            <div id="flagCount"></div>
+          </fieldset>
+          <fieldset class="col-sm-6">
+            Timer (seconds)
+            <div id="timeCounter"></div>
+          </fieldset>
+				</div>
+			</div>
+		</div>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script type="text/javascript" src="js/sweeper.js" ></script>
+	</body>
+</html>
